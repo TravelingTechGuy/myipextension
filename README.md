@@ -2,7 +2,7 @@ My IP Chrome Extension - geolocate by IP
 ----------------------------------------
 
 This simple Chrome extension shows your external IP and then uses uses the [IPInfoDB API](http://ipinfodb.com/) to provide geolocation data, based on that IP.
-You can download the extension from the [https://chrome.google.com/webstore](Chrome app store).
+You can download the extension from the [Chrome app store](https://chrome.google.com/webstore).
 
 How does it work
 ================
@@ -12,8 +12,8 @@ You can find out more, including the source, at [https://github.com/TravelingTec
 Build
 =====
 I used several open source apps to bootstrap and build this extension:
-- [https://github.com/yeoman/yeoman](Yeoman) or the official website [http://yeoman.io](yeoman.io)
-- [https://github.com/yeoman/generator-chrome-extension](Yeoman Chrome Extension Generator)
-- [https://github.com/gruntjs/grunt](Grunt)
+- [Yeoman](https://github.com/yeoman/yeoman) or the official website [yeoman.io](http://yeoman.io)
+- [Yeoman Chrome Extension Generator](https://github.com/yeoman/generator-chrome-extension)
+- [Grunt](https://github.com/gruntjs/grunt)
 
 Created by **Guy Vider** [http://www.TravelingTechGuy.com](http://www.TravelingTechGuy.com)
