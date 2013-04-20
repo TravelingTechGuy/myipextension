@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- build:js scripts/vendor/jquery.min.js -->
+        <script src="scripts/vendor/jquery.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/popup.js -->
+        <script src="scripts/popup.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div id="ip" class="getting-data">
+            Getting data...
+            <span id="spinner">
+                <img src="images/spinner.gif" alt="Loading" width="16" height="16" />
+            </span>
+        </div>
+        <div id="nav">
+            <a href="#" id="more" title="show/hide geolocation info">more</a>
+            <a href="#" id="copy" title="copy IP">copy</a>
+            <a href="#" id="map" title="try to locate on Google Maps">map</a>
+        </div>
+        <div id="geo">
+            <table>
+                <tr><td>City</td><td><span id="City" class="value"></span></td></tr>
+                <tr><td>State</td><td><span id="RegionName" class="value"></span></td></tr>
+                <tr><td>Country</td><td><span id="CountryName" class="value"></span></td></tr>
+                <tr><td>Zip</td><td><span id="ZipPostalCode" class="value"></span></td></tr>
+                <tr><td>Latitude</td><td><span id="Latitude" class="value"></span></td></tr>
+                <tr><td>Longitude</td><td><span id="Longitude" class="value"></td></tr>
+            </table>
+        </div>
+        <br />
+        <div class="about">
+            <a href="#" title="more about me">Traveling Tech Guy &copy; 2013</a>
+        </div>
+    </body>
+</html>
