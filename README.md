@@ -7,8 +7,8 @@ You can download the extension from the [Chrome app store](https://chrome.google
 How does it work
 ----------------
 This extension makes one call to a server side, that uses IPInfoDB to turn the IP into a result JSON.
-Read the whole story on [my blog](http://code.travelingtechguy.com/2013/04/whats-my-ip.html).
-You can find the server-side source, at [https://github.com/TravelingTechGuy/myip](https://github.com/TravelingTechGuy/myip).
+
+You can read the whole story on [my blog](http://code.travelingtechguy.com/2013/04/whats-my-ip.html), and find the server-side source, at [https://github.com/TravelingTechGuy/myip](https://github.com/TravelingTechGuy/myip).
 
 Build
 -----
