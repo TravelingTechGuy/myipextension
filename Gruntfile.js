@@ -214,7 +214,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('manifest', function() {
         var manifest = grunt.file.readJSON(yeomanConfig.app + '/manifest.json');
-        manifest.background.scripts = ['scripts/background.js'];
+        //manifest.background.scripts = ['scripts/background.js'];
         grunt.file.write(yeomanConfig.dist + '/manifest.json', JSON.stringify(manifest, null, 2));
     });
 

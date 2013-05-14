@@ -19,26 +19,36 @@ var showMap = function(data) {
 	}).show();
 };
 
+var showError = function(error) {
+	$('#ip').text(error);
+	$('#nav').show().children().hide();
+	$('#retry').show();
+};
+
 var getIPData = function() {
-	$(document)
-		.ajaxSend(function() {
-			$('#spinner').show();
-		})
-		.ajaxStop(function() {
-			$('#spinner').hide();
-		})
-		.ajaxError(function() {
-			$('#spinner').hide();
-			$('#ip').text('Error occurred');
-		});
+	$(document).ajaxSend(function() {
+		$('#spinner').show();
+	})
+	.ajaxStop(function() {
+		$('#spinner').hide();
+	})
+	.ajaxError(function() {
+		$('#spinner').hide();
+		showError('Error occurred');
+	});
 	$.getJSON('http://myip.travelingtechguy.com?e=1', function(data) {
 		// console.log(JSON.stringify(data));
-		$('#ip').removeClass('getting-data').text(data.Ip);
-		$('.value').each(function() {
-			$(this).text(data[$(this).attr('id')]);
-		});
-		$('#nav').show();
-		showMap(data);
+		if(data.error) {
+			showError('Error occurred');
+		}
+		else {
+			$('#ip').removeClass('getting-data').text(data.Ip);
+			$('.value').each(function() {
+				$(this).text(data[$(this).attr('id')]);
+			});
+			$('#nav').show();
+			showMap(data);
+		}
 	});
 };
 

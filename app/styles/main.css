@@ -14,7 +14,7 @@ a, a:focus {
 	outline: none;
 	text-decoration: none;
 }
-#geo, #nav, #map, #sandbox, #spinner {
+#geo, #nav, #map, #spinner, #retry {
 	display: none;
 }
 #nav a {
