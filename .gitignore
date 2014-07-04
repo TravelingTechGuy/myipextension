@@ -1,7 +1,8 @@
-node_modules
-temp
-.tmp
+.DS_Store
+.jshintrc
+*.map
+*.zip
+build
+build.js
 dist
-package
-.sass-cache
-app/components
+node_modules

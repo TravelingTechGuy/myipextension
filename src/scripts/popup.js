@@ -53,6 +53,7 @@ var getIPData = function() {
 };
 
 $(document).ready(function() {
+	$('#year').text((new Date()).getFullYear());
 	getIPData();
 	$('#more').on('click', function() {
 		$('#more').text($('#more').text() === 'more' ? 'less' : 'more');
@@ -66,8 +67,5 @@ $(document).ready(function() {
 		}).fadeTo('slow', 1.00, function() {
 			$('#ip').text(ip);
 		});
-	});
-	$('.about').on('click', function() {
-		window.open('http://www.TravelingTechGuy.com');
 	});
 });
