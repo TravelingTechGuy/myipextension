@@ -45,9 +45,9 @@ gulp.task('jshint', function() {
 
 //copy vendor scripts and uglify all other scripts, creating source maps
 gulp.task('scripts', ['jshint'], function() {
-	gulp.src('src/scripts/vendors/**/*.js')
-		.pipe(gulp.dest('build/scripts/vendors'));
-	return gulp.src(['src/scripts/**/*.js', '!src/scripts/vendors/**/*.js'])
+	gulp.src('src/scripts/vendor/**/*.js')
+		.pipe(gulp.dest('build/scripts/vendor'));
+	return gulp.src(['src/scripts/**/*.js', '!src/scripts/vendor/**/*.js'])
 		.pipe(stripdebug())
 		.pipe(uglify({outSourceMap: true}))
 		.pipe(gulp.dest('build/scripts'));

@@ -1,6 +1,6 @@
 {
   "name": "MyIP Extension",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "manifest_version": 2,
   "description": "Chrome Extension that shows your external IP and geolocation",
   "homepage_url": "http://www.TravelingTechGuy.com",
